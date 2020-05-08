@@ -2,7 +2,7 @@
 title: Block Reward Contract
 ---
 
-Parity's consensus engine allows using a smart contract for block reward calculation. The engine
+OpenEthereum's consensus engine allows using a smart contract for block reward calculation. The engine
 passes a list of benefactors and reward types to the contract which then returns a list of addresses
 and respective rewards.
 

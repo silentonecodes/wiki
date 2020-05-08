@@ -1,5 +1,5 @@
 ---
-title: Fuzzing Parity Code
+title: Fuzzing OpenEthereum Code
 ---
 
 Fuzzing is a great tool for coverage testing, and discovering bugs. Rust has a utility (`cargo-fuzz`) for tying into the powerful `libFuzzer` and sanitizer libraries packaged with LLVM.
@@ -47,12 +47,12 @@ For details on cargo-fuzz output, check the great write-up [here](https://llvm.o
 
 So, the tools are installed, the project directory is instrumented, and there is an empty fuzzing harness. Now what?
 
-Let's fill in the blanks using a simple test case, fuzzing the keccak hash library used by Parity.
+Let's fill in the blanks using a simple test case, fuzzing the keccak hash library used by OpenEthereum.
 
 First, repeat the steps to initialize a new fuzzing project:
 
 ```
-cd /path/to/parity/util/hash
+cd /path/to/openethereum/util/hash
 rustup run nightly bash # run a bash shell setup for nightly Rust
 cargo-fuzz init -t keccak
 ```

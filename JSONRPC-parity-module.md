@@ -1038,7 +1038,7 @@ Response
 
 ### parity_versionInfo
 
-Provides information about running version of Parity.
+Provides information about running version of the client.
 
 #### Parameters
 
@@ -1048,7 +1048,7 @@ None
 
 - `Object` - Information on current version.
     - `hash`:   `Hash` - 20 Byte hash of the current build.
-    - `track`:   `String` - Track on which it was released, one of: `"stable"`, `"beta"`, `"nightly"`, `"testing"`, `"null"` (unknown or self-built).
+    - `track`:   `String` - Track on which it was released, one of: `"stable"`, `"nightly"`, `"testing"`, `"null"` (unknown or self-built).
     - `version`:   `Object` - Version number composed of `major`, `minor` and `patch` integers.
 
 #### Example
@@ -1882,11 +1882,11 @@ Response
   "id": 1,
   "jsonrpc": "2.0",
   "result": [
-    "2017-01-20 18:14:19  Updated conversion rate to Ξ1 = US$10.63 (11199212000 wei/gas)",
-    "2017-01-20 18:14:19  Configured for DevelopmentChain using InstantSeal engine",
-    "2017-01-20 18:14:19  Operating mode: active",
-    "2017-01-20 18:14:19  State DB configuration: fast",
-    "2017-01-20 18:14:19  Starting Parity/v1.7.0-unstable-2ae8b4c-20170120/x86_64-linux-gnu/rustc1.14.0"
+    "2020-05-11 18:14:19  Updated conversion rate to Ξ1 = US$10.63 (11199212000 wei/gas)",
+    "2020-05-11 18:14:19  Configured for DevelopmentChain using InstantSeal engine",
+    "2020-05-11 18:14:19  Operating mode: active",
+    "2020-05-11 18:14:19  State DB configuration: fast",
+    "2020-05-11 18:14:19  Starting OpenEthereum/v3.0.0-unstable-44f088bb4-20200505/x86_64-unknown-linux-gnu/rustc1.43.0"
   ]
 }
 ```
@@ -2605,7 +2605,7 @@ Response
 
 ### parity_nodeName
 
-Returns node name, set when starting parity with `--identity NAME`.
+Returns node name, set when starting OpenEthereum with `--identity NAME`.
 
 #### Parameters
 

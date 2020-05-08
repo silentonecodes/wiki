@@ -49,4 +49,4 @@ We will need to deploy `RelaySet`, then deploy `RelayedOwnedSet`, and finally, l
 
 The Validator Set contract is now deployed. You can make sure `Node0` is the only allowed validator by calling `getValidators`.
 
-|[ ← Part 1 - Configuring each node ](Validator-Set-Tutorial-1.md)| [ Part 3 - Hardfork to use the Validator Set contract → ](Validator-Set-Tutorial-3.md)|
+|[ ← Part 1 - Configuring each node ](Validator-Set-Tutorial-1)| [ Part 3 - Hardfork to use the Validator Set contract → ](Validator-Set-Tutorial-3)|
