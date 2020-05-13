@@ -11,7 +11,6 @@ Per default, OpenEthereum client is built without the Secret Store feature. To e
 ```
 $ git clone https://github.com/openethereum/openethereum
 $ cd openethereum
-$ git checkout beta
 $ cargo build --features secretstore --release
 ```
 
