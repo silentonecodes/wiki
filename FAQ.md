@@ -341,7 +341,7 @@ You can control the logging level with `-l` and define a `--log_file` location:
                                  appended. (default: None)
 ```
 LOGGING accepts the following modules:
-`account_bloom`,`basicauthority`,`blockchain`,`chain`,`client`,`cull`,`dapps`,`discovery`,`diskmap`,`enact`,`engine`,`estimate_gas`,`ethash`,`evm`,`executive`,`ext`,`externalities`,`external_tx`,`fatdb`,`fetch`,`finality`,`hw`,`hypervisor`,`import`,`jdb`,`jdb.fine`,`jdb.ops`,`journaldb`,`jsontests`,`les`,`light_fetch`,`local_store`,`migration`,`miner`,`mode`,`network`,`on_demand`,`own_tx`,`parity_whisper`,`perf`,`pip`,`pip_provider`,`poa`,`pubsub`,`rcdb`,`reorg`,`rpc`,`rpc-client`,`secretstore`,`secretstore_net`,`shutdown`,`signer`,`snapshot`,`snapshot_io`,`snapshot_watcher`,`spec`,`state`,`stats`,`stratum`,`sync`,`trace`,`tx`,`tx_filter`,`txpool`,`txqueue`,`updater`,`verification`,`warp`,`wasm`,`whisper`,`whisper-cli`
+`account_bloom`,`basicauthority`,`blockchain`,`chain`,`client`,`cull`,`dapps`,`discovery`,`diskmap`,`enact`,`engine`,`estimate_gas`,`ethash`,`evm`,`executive`,`ext`,`externalities`,`external_tx`,`fatdb`,`fetch`,`finality`,`hw`,`hypervisor`,`import`,`jdb`,`jdb.fine`,`jdb.ops`,`journaldb`,`jsontests`,`les`,`light_fetch`,`local_store`,`migration`,`miner`,`mode`,`network`,`on_demand`,`own_tx`, `perf`,`pip`,`pip_provider`,`poa`,`pubsub`,`rcdb`,`reorg`,`rpc`,`rpc-client`,`secretstore`,`secretstore_net`,`shutdown`,`signer`,`snapshot`,`snapshot_io`,`snapshot_watcher`,`spec`,`state`,`stats`,`stratum`,`sync`,`trace`,`tx`,`tx_filter`,`txpool`,`txqueue`,`updater`,`verification`,`warp`,`wasm`
 
 Additionally, a logging level can  be set per module:
 `info`, `debug`, `trace` (default if no level is specified for a module)
