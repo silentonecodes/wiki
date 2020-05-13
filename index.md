@@ -27,3 +27,4 @@ Some help:
 - If you're interested in mining with OpenEthereum, see the [Mining](Mining) guide.
 - If you'd like to use the JSON-RPC interface with OpenEthereum, see the [JSON-RPC](JSONRPC) guide.
 - For [Private chains](Private-chains) and [Proof of Authority Chains](Proof-of-Authority-Chains), you might find the [Chain specification](Chain-specification) useful.
+- Join our [Discord](https://discord.io/openethereum) chat if you have more questions.
