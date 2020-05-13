@@ -203,7 +203,7 @@ To reconstruct document key, Secret Store client must pass values of these field
 Implementation is based on [ECDKG: A Distributed Key Generation Protocol Based on Elliptic Curve Discrete Logarithm](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.124.4128&rank=1).
 
 ### Document key retrieval session
-During document key shadow retrieval session, document key is not reconstructed on any node. But it requires Secret Store client either to have an access to OpenEthereum RPCs, or to run some EC calculations to decrypt the document key. It is possible to run lighter version of this session, which returns final document key (though, encrypted with requester public key) if you have enough trust in Secret Store nodes.
+During a document key shadow retrieval session, the document key is not reconstructed on any node. But it requires Secret Store client either to have an access to OpenEthereum RPCs, or to run some EC calculations to decrypt the document key. It is possible to run lighter version of this session, which returns the final document key (though, encrypted with the requester's public key) if you have enough trust in Secret Store nodes.
 
 To run this session, you will need to prepare following parameters:
 - server key id: the id of previously generated server key, to which document key has been bound;
