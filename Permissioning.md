@@ -228,7 +228,7 @@ contract TestOOG {
 
 
 ## Validator set
-This level of permissions is a rather important one. It determines which parties (Validators) are entitled to create new blocks and thereby build the blockchain. Validators need to collect and validate transactions before sealing them into blocks. Rules according to which they interact can be referred to as a consensus engine. OpenEthereum currently supports three different consensus engines:
+This level of permissions is a rather important one. It determines which parties (Validators) are entitled to create new blocks and thereby build the blockchain. Validators need to collect and validate transactions before sealing them into blocks. The rules according to which they interact can be referred to as a consensus engine. OpenEthereum currently supports three different consensus engines:
 
 * Ethash (PoW)
 * Aura
