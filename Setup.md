@@ -169,5 +169,5 @@ $ cargo run --release --help
 In case you need to persist the blockchain files, keys etc., you should run the image with the `--base-path` option and then mount it, e.g.:
 
 ```bash
-$ docker run --name openethereum -v /srv/openethereum:/mnt openethereum/openethereum:beta --base-path /mnt
+$ docker run --name openethereum -v /srv/openethereum:/mnt openethereum/openethereum --base-path /mnt
 ```
