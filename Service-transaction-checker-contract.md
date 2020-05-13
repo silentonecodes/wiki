@@ -7,7 +7,7 @@ Service transaction checker contract is used by OpenEthereum to filter out trans
 Default behaviour (to which you can always revert by using `--refuse-service-transactions` command line option) is to discard all service transactions, coming from network. If ['registrar'](https://github.com/paritytech/contracts/blob/master/Registry.sol) contract is deployed and registered for your chain, you can alter default behaviour by:
 1) deploying ['certifier'](https://github.com/paritytech/contracts/blob/master/SimpleCertifier.sol) contract
 2) registering address of this contract in registry with 'service_transaction_checker' name
-On startup, OpenEthereum will check if this contract is registered and will start checking author of each service transaction, coming from network. If author is **not** certified to create service transactions, transaction will be discarded. Otherwise, it will be accepted.
+On startup, OpenEthereum will check if this contract is registered and will start checking the author of each service transaction, coming from the network. If the author is **not** certified to create service transactions, the transaction will be discarded. Otherwise, it will be accepted.
 
 To register address, which is able to create service transactions, you should use `certify` method. To reverse this action, use `revoke` method. You can use `certified` method to check if address is certified for making service transactions.
 
