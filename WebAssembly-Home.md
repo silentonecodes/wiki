@@ -53,7 +53,7 @@ See [Links](WebAssembly-Links) examples section for some more sophisticated exam
 
 ## Other languages for contracts
 
-If your languages of choice can be compiled in WebAssembly and can generate bindings for those syscalls, you are good to go.
+If your language of choice can be compiled in WebAssembly and can generate bindings for those syscalls, you are good to go.
 
 ## Integrating in the existing toolchain
 
