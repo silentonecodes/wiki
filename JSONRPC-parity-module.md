@@ -1882,7 +1882,7 @@ Response
   "id": 1,
   "jsonrpc": "2.0",
   "result": [
-    "2020-05-11 18:14:19  Updated conversion rate to Ξ1 = US$10.63 (11199212000 wei/gas)",
+    "2020-05-11 18:14:19  Updated conversion rate to Ξ1 = US$185.63 (24534518 wei/gas)",
     "2020-05-11 18:14:19  Configured for DevelopmentChain using InstantSeal engine",
     "2020-05-11 18:14:19  Operating mode: active",
     "2020-05-11 18:14:19  State DB configuration: fast",

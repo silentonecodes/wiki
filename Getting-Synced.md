@@ -10,7 +10,7 @@ $ openethereum
 
 ## Warp Synchronization
 
-State snapshotting, or Warp Sync, allows for an extremely fast "synchronization" that skips almost all of the block processing, simply injecting the appropriate data directly into the database. To use a snapshot sync, you first need to download a snapshot.
+State snapshotting, or Warp Sync, allows for a very fast "synchronization" that skips almost all of the block processing, simply injecting the appropriate data directly into the database. To use a snapshot sync, you first need to download a snapshot.
 
 Note, at present, snapshotting does not place all of the block or receipt data into the database. This means you will not get information relating to transactions more than a few days old until after initially syncing to the chain head. This is fine for some usages such as mining, but if you have or need access to historical transaction data (e.g. if you have an account that you've been using with Geth and wish to browse sent transactions) then you probably want to sync normally.
 
