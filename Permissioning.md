@@ -232,6 +232,7 @@ This level of permissions is a rather important one. It determines which parties
 
 * Ethash (PoW)
 * Aura
+* Clique
 
 More are being implemented.
 
