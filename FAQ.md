@@ -21,7 +21,7 @@ To make sure you get the most recent snapshot available and warp sync very close
 Read more about [Warp Sync](Warp-Sync-Snapshot-Format).
 
 ### What are the OpenEthereum disk space needs and overall hardware requirements?
-Running a node with the standard configuration for the Ethereum Mainnet requires a lot of computer resources. The blockchain download and validation process are particularly heavy on CPU and disk IO. It is therefore recommended to run a full node on a computer with multi-core CPU, 4GB RAM and an SSD drive and at least 200GB free space. Internet connection can also be a limiting factor. A decent DSL connection is required.
+Running a node with the standard configuration for the Ethereum Mainnet requires a lot of computer resources. The blockchain download and validation process are particularly heavy on CPU and disk IO. It is therefore recommended to run a full node on a computer with multi-core CPU, 8GB RAM and an SSD drive and at least 400GB free space. Internet connection can also be a limiting factor. A decent DSL connection is required.
 
 Node performance can also be improved significantly by using OpenEthereum's caching features, and accessing state from memory instead of from your disk by specifying the `--cache-size` flag - optimally this requires you to have additional RAM equivalent to the state size of the blockchain you are connected to, over 8GB on Ethereum mainnet, for a total of over 12GB of RAM.
 
