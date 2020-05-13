@@ -97,4 +97,4 @@ An example template that can be used for the consensus algorithms:
 }
 ```
 
-The only available algorithm for PoA is [Aura](Pluggable-Consensus#aura), other consensus might be added in the future. More details on other chain parameters are available on the [Chain specification](Chain-specification) page, there are also [important considerations](Pluggable-Consensus#operational-tradeoffs) when setting up your Proof of Authority chain in order to ensure it works reliably.
+[Aura](Pluggable-Consensus#Aura) and Clique are the two available consensus algorithms for PoA. More details on other chain parameters are available on the [Chain specification](Chain-specification) page, there are also [important considerations](Pluggable-Consensus#Operational-tradeoffs) when setting up your Proof of Authority chain in order to ensure it works reliably.
