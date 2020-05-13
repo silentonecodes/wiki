@@ -2,7 +2,7 @@
 title: Service Transaction Checker Contract
 ---
 
-Service transaction checker contract is used by OpenEthereum to filter out transactions with zero gas price (aka service transactions).
+The service transaction checker contract is used by OpenEthereum to filter out transactions with zero gas price (aka service transactions).
 
 Default behaviour (to which you can always revert by using `--refuse-service-transactions` command line option) is to discard all service transactions, coming from network. If ['registrar'](https://github.com/paritytech/contracts/blob/master/Registry.sol) contract is deployed and registered for your chain, you can alter default behaviour by:
 1) deploying ['certifier'](https://github.com/paritytech/contracts/blob/master/SimpleCertifier.sol) contract
