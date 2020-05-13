@@ -16,17 +16,21 @@ title: Setup OpenEthereum
 
 ## Binaries
 
-There are a few ways of proceeding here. You can build OpenEthereum from the sources; you can launch OpenEthereum using the binaries built [for the latest releases](https://github.com/openethereum/openethereum/releases) for Linux, Mac/Homebrew and Windows or, if you're on an Ubuntu Snappy platform, just use our Snappy App. Other Unix-like environments should work (assuming you have the latex *nix installed); we're not going to expend much effort supporting them, though build PRs are welcome.
+There are a few ways of proceeding here. You can build OpenEthereum from the sources; you can launch OpenEthereum using the binaries built [for the latest releases](https://github.com/openethereum/openethereum/releases) for Linux, macOS and Windows or, if you're on an Ubuntu Snappy platform, just use our Snappy App. Other Unix-like environments should work (assuming you have the latex *nix installed); we're not going to expend much effort supporting them, though build PRs are welcome.
 
-### Use the binaries for your platform
+### Homebrew (macOS)
+- `brew tap openethereum/openethereum`
+- `brew install openethereum`
+
+### Manual
 Binaries for OpenEthereum are provided. If you'd like to try these out, downloads are available on the [Releases page](https://github.com/openethereum/openethereum/releases).
 - Linux 
     - Download the latest release from the link above
     - Make the `openethereum` file executable by running `chmod u+x openethereum`
     - Launch OpenEthereum with your favourite flags: `./openethereum --chain dev --jsonrpc-apis personal`
     
-- Mac
-  - Download the mac binary.
+- macOS
+  - Download the macOS binary.
   - Open a terminal and navigate to the directory using `cd /path/to/binary/folder/`.
   - Make the binary executable by running `chmod +x openethereum`.
   - You can now double click on the binary.
