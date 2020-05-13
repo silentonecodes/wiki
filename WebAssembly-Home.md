@@ -57,6 +57,4 @@ If your languages of choice can be compiled in WebAssembly and can generate bind
 
 ## Integrating in the existing toolchain
 
-We believe WebAssembly is here to stay, therefore we contribute not only to the OpenEthereum to support Wasm contract execution, but to WebAssembly ecosystem as a whole.
-
 See our [Links](WebAssembly-Links) repositories section for some general-purpose WebAssembly repositories we support.
