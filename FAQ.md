@@ -144,10 +144,10 @@ openethereum import $HOME/ethereum-chain-backup.rlp
 ### How to delete the blockchain to initiate full re-sync without deleting wallet info?
 
 - Stop OpenEthereum, then execute `openethereum db kill`.
-- Relevant options are `--chain=*` `--pruning=*` and `--db-path/--base-path`, i.e. to delete `kovan` run:
+- Relevant options are `--chain=*` `--pruning=*` and `--db-path/--base-path`, i.e. to delete `goerli` run:
 
 ```bash
-openethereum db kill --chain=kovan
+openethereum db kill --chain=goerli
 ```
 
 ## Basic Operations, Configuration, and Synchronization
@@ -305,8 +305,8 @@ First get a OpenEthereum node up and running (either build yourself or install o
 - Aura (Proof-of-Authority Validator Engine), see [Aura](Aura).
 - Clique (Proof-of-Authority Validator Engine).
 
-### How do I get Ether for the Ropsten, Rinkeby or Kovan testnets?
-- See [Ropsten Faucets](http://ethereum.stackexchange.com/q/84).
+### How do I get Ether for the Görli, Rinkeby or Kovan testnets?
+- See [Görli Authenticated Faucet](https://goerli.net).
 - See [Rinkeby Authenticated Faucet](https://faucet.rinkeby.io).
 - See [Kovan Faucets](https://github.com/kovan-testnet/faucet).
 

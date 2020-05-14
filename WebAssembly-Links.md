@@ -15,7 +15,7 @@ title: WebAssembly Links
 
 - [wasm-utils](https://github.com/paritytech/wasm-utils) - Contract-oriented collection of build tools for Rust.
 - [pwasm-std](https://github.com/openethereum/pwasm-std) - WASM-oriented general purpose std replacement for minimal binary sizes.
-- [pwasm-ethereum](https://github.com/openethereum/pwasm-ethereum) - Rust library for interacting with Ethereum-like network (Kovan, for other PoA scenarios using OpenEthereum).
+- [pwasm-ethereum](https://github.com/openethereum/pwasm-ethereum) - Rust library for interacting with Ethereum-like network (Görli, for other PoA scenarios using OpenEthereum).
 - [wasm-tests](https://github.com/openethereum/pwasm-ethereum) - Set of cross-implementation tests used for testing OpenEthereum WASM Runtime.
 - [wasmi](https://github.com/paritytech/wasmi) - General-purpose WASM interpreter in pure Rust.
 - [parity-wasm](https://github.com/paritytech/parity-wasm) - General-purpose library for reading, writing, transforming and building WASM binaries from scratch (has almost zero dependencies).

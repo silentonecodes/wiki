@@ -7,8 +7,8 @@ By default, when simply running `openethereum`, OpenEthereum will connect to the
 In order to run a chain different to the official public Ethereum one, OpenEthereum has to run with the `--chain` option or with a [config file](Configuring-OpenEthereum#config-file) specifying `chain = "path"` under `[parity]`. There are a few named presets that can be selected from or a custom JSON spec file can be supplied.
 
 ## Chain presets available
-- [`mainnet`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/foundation.json) (default) main Ethereum network
-- [`rinkeby`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/rinkeby.json) the fast Ethereum test network using Clique consensus engine.
+- [`foundation`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/foundation.json) (default) main Ethereum network
+- [`goerli`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/goerli.json) and [`rinkeby`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/rinkeby.json) the fast Ethereum test networks using Clique consensus engine.
 - [`kovan`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/kovan.json) the [fast Ethereum test network](https://github.com/kovan-testnet/config) using PoA consensus engine.
 - [`ropsten`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/ropsten.json) the old Ethereum test network
 - [`classic`](https://github.com/openethereum/openethereum/blob/master/ethcore/res/ethereum/classic.json) Ethereum Classic network
@@ -76,7 +76,7 @@ A JSON file which specifies rules of a blockchain, some fields are optional whic
 + **`"params"`** contains general chain parameters:
   + `"networkID"` DevP2P supports multiple networks, and ID is used to uniquely identify each one which is used to connect to correct peers and to prevent transaction replay across chains. See [here](https://ethereum.stackexchange.com/questions/17051/how-to-select-a-network-id-or-is-there-a-list-of-network-ids/17101#17101) for network IDs that are not available anymore.
   + `"maximumExtraDataSize"` integer specifying the maximum size in bytes of the extra_data field of the header. This must be 32 bytes or fewer as per the Ethereum Yellow Paper (see extraData under 4.3). It is an optional value, used by some Ethereum mining pools to log their blocks. The current value for Ethereum and Kovan is "32".
-  + `"minGasLimit"` the minimum gas limit. Most chains like Ethereum and Kovan use 5000 (less than the minimum 21000 needed to perform a transaction) in a deliberate process called "thawing", more info about it [here](https://ethereum.gitbooks.io/frontier-guide/content/frontier.html/).
+  + `"minGasLimit"` the minimum gas limit.
   
   Optional:
   + `"accountStartNonce"` in the past this was used for transaction replay protection
@@ -116,14 +116,12 @@ A JSON file which specifies rules of a blockchain, some fields are optional whic
   + `"maxCodeSize"` - U64 - Maximum contract code size that can be deployed in a transaction. Introduced in [EIP170](https://eips.ethereum.org/EIPS/eip-170) to mitigate a vulnerability in Ethereum.
   + `"maxCodeSizeTransition"` transition block number for `maxCodeSize` .
 
-[ + "eip86Transition" EIP-86 (Metropolis) transition block number. Commented out before openethereum/openethereum#9140 is merged.]: # ()
-
 
 + **`"accounts"`** contains optional contents of the genesis block, such as simple accounts with balances or contracts. OpenEthereum does not include the standard Ethereum builtin contracts by default. These are necessary when writing new contracts in Solidity since compiled Solidity often refers to them. To make the chain behave like the public Ethereum chain the 4 contracts need to be included in the spec file, as shown in the example below:
 
   ```
   "accounts": {
-      "0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name":   "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
+      "0x0000000000000000000000000000000000000001": { "balance": "1", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
       "0x0000000000000000000000000000000000000002": { "balance": "1", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
       "0x0000000000000000000000000000000000000003": { "balance": "1", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
       "0x0000000000000000000000000000000000000004": { "balance": "1", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } }

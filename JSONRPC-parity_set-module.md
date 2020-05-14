@@ -256,7 +256,7 @@ Sets the network spec file the client is using.
 
 #### Parameters
 
-0. `String` - Chain spec name, one of: "foundation", "ropsten", "morden", "kovan", "classic", "dev", "expanse", "musicoin" or a filename.
+0. `String` - Chain spec name, one of the [chain presets](Chain-specification#Chain-presets-available) or a filename.
 
 ```js
 params: ["foundation"]

@@ -17,7 +17,7 @@ Use `openethereum --help` to find out about available options. To avoid adding o
 
 ### Networking
 
-You can connect to the Ropsten testnet with `openethereum --chain ropsten` or to the Kovan testnet with `openethereum --chain kovan`.
+You can connect to the Görli testnet with `openethereum --chain goerli`.
 
 You can override the normal boot nodes with `--bootnodes`, i.e., you might run a local bootnode and sync from that by running:
 
