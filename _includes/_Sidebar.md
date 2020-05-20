@@ -65,7 +65,6 @@
 
 ### Hacking
 - [Known Issues](https://github.com/openethereum/openethereum/issues) <i class="fa fa-external-link"></i>
-- [Fuzz Testing](Fuzz-Testing)
 - [Labeling](Labelling)
 - [Release Notes](https://github.com/openethereum/openethereum/blob/master/CHANGELOG.md) <i class="fa fa-external-link"></i>
 - [Discord](https://discord.io/openethereum) <i class="fa fa-external-link"></i>
